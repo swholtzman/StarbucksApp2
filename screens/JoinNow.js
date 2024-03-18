@@ -53,7 +53,7 @@ export default function JoinNow() {
         fName: formData.given_name,
         lName: formData.family_name,
       });
-      navigation.navigate("Main");
+      navigation.navigate("FrontPage");
     } catch (error) {
       console.error("Error during form submission:", error);
     }

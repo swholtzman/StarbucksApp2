@@ -10,3 +10,52 @@ type Todo @model {
   name: String!
   description: String
 }
+
+
+# This "input" configures a global authorization rule to enable public access to
+# all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
+
+# input AmplifyGlobalAuthRule {
+#   allow: String = "public"
+# }
+
+# type User @model {
+#   id: ID!
+#   name: String!
+#   description: String
+#   starRating: Int
+#   orders: [Order] @hasMany
+# }
+
+# type Order @model {
+#   id: ID!
+#   userId: User! 
+#   items: [OrderItem]!
+#   orderDetails: String
+#   orderDate: AWSDate! 
+#   orderTime: AWSTime! 
+#   locationOrderedFrom: ChainLocation!
+# }
+
+# type OrderItem @model {
+#   id: ID!
+#   orderId: Order! 
+#   itemId: Item! 
+#   quantity: Int
+#   customizations: String 
+# }
+
+# type Item @model {
+#   itemID: ID!
+#   name: String!
+#   description: String
+#   price: Float!
+#   available: Boolean! 
+# }
+
+# type ChainLocation @model {
+#   chainID: ID!
+#   chainName: String! 
+#   chainAddress: String!
+#   openClosedStatus: String! 
+# }

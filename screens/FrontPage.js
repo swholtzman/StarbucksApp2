@@ -1,10 +1,10 @@
 import { StyleSheet, View, Text } from 'react-native';
 import React from 'react';
 
-export default function MainPage() {
+export default function FrontPage() {
   return (
     <View> 
-      <Text>Main Page</Text>
+      <Text>Front Page</Text>
     </View>
   );
 }

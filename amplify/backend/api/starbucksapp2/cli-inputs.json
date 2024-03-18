@@ -4,13 +4,21 @@
     "apiName": "starbucksapp2",
     "serviceName": "AppSync",
     "defaultAuthType": {
-      "mode": "API_KEY",
-      "expirationTime": 7
+      "mode": "AMAZON_COGNITO_USER_POOLS",
+      "cognitoUserPoolId": "authStarbucksApp2"
     },
     "conflictResolution": {
       "defaultResolutionStrategy": {
         "type": "AUTOMERGE"
       }
-    }
+    },
+    "additionalAuthTypes": [
+      {
+        "mode": "API_KEY",
+        "expirationTime": 10,
+        "apiKeyExpirationDate": "2024-03-27T22:09:06.648Z",
+        "keyDescription": "starbucksapp2_amplifyDB_APIKey"
+      }
+    ]
   }
 }

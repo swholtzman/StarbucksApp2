@@ -20,7 +20,7 @@ export default function SignIn() {
     try {
       const user = await Auth.signIn(email, password);
       console.log('Sign in success', user);
-      navigation.navigate("Main"); // Adjust with your main screen route
+      navigation.navigate("FrontPage");
     } catch (error) {
       console.error('error signing in', error);
       // Handle error (e.g., show error message to the user)
